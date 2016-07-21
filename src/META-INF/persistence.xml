@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+    xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+        http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    
+    <persistence-unit name="BemAliPersistence" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+        		<!-- nome completo da classe do driver JDBC -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            	<!-- URL de conexão com o banco de dados -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/Teste01" />
+            	<!-- Usuário da conexao do banco de dados -->
+            <property name="javax.persistence.jdbc.user" value="root" />
+            	<!-- Senha da conexao do banco de dados -->
+            <property name="javax.persistence.jdbc.password" value="" />
+            	<!-- dialeto a ser usado na construção de comandos SQL -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+            	<!-- informa se os comandos SQL devem ser exibidos na console 
+            	(importante para debug, mas deve ser desabilitado em ambiente de produção) -->
+            <property name="hibernate.show_sql" value="true" />
+            	<!-- indica se os comandos SQL exibidos na console devem ser formatados 
+            	(facilita a compreensão, mas pode gerar textos longos na saída) -->
+            <property name="hibernate.format_sql" value="true" />
+            	<!-- cria ou atualiza automaticamente a estrutura das tabelas no banco de dados,
+            	os valores possiveis sao: 
+            		validate: validate the schema, makes no changes to the database.
+					update: update the schema.
+					create: creates the schema, destroying previous data.
+					create-drop: drop the schema at the end of the session. -->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.connection.characterEnconding" value="UTF-8"/>
+        </properties>
+    </persistence-unit>
+    
+</persistence>
+<!-- # Este arquivo foi criado na mão # 
+ 1. Na apostila que estava lendo dizia que o provider deveria ser: org.hibernate.ejb.HibernatePersistence,
+ 	portanto só funcionou com org.hibernate.jpa.HibernatePersistenceProvider.
+ 2. Já deve existir previamente o banco de dados DBTeste com o respectivo esquema DBTeste, no MySQL por exemplo.
+ -->

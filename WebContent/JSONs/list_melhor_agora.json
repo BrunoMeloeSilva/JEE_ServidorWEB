@@ -1,0 +1,34 @@
+[
+	{
+		"id":1 
+		,"oquee":"O melhor restaurante da semana"
+		,"quando":"Amanhã"
+		,"onde":"Na casa do caraio"
+		,"horario":"A tarde"
+		,"quanto":"10 real homem, 5 mulher, 2,50 gay"
+	}
+	,{
+		"id":2 
+		,"oquee":"O melhor restaurante da semana"
+		,"quando":"Amanhã"
+		,"onde":"Na casa do caraio"
+		,"horario":"A tarde"
+		,"quanto":"10 real homem, 5 mulher, 2,50 gay"
+	}
+	,{
+		"id":3 
+		,"oquee":"O melhor restaurante da semana"
+		,"quando":"Amanhã"
+		,"onde":"Na casa do caraio"
+		,"horario":"A tarde"
+		,"quanto":"10 real homem, 5 mulher, 2,50 gay"
+	}
+	,{
+		"id":4 
+		,"oquee":"O melhor restaurante da semana"
+		,"quando":"Amanhã"
+		,"onde":"Na casa do caraio"
+		,"horario":"A tarde"
+		,"quanto":"10 real homem, 5 mulher, 2,50 gay"
+	}
+]
